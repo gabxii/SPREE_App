@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
+    tools:context=".map">
 
     <com.mapbox.maps.MapView
         android:id="@+id/mapView"
@@ -15,8 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        mapbox:mapbox_cameraTargetLat="40.7128"
-        mapbox:mapbox_cameraTargetLng="-74.0060"
-        mapbox:mapbox_cameraZoom="9.0" />
+        mapbox:mapbox_cameraTargetLat="16.399922"
+        mapbox:mapbox_cameraTargetLng="120.584723"
+        mapbox:mapbox_cameraZoom="15.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,21 +1,21 @@
 package com.android.spree_app;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.Window;
 import com.mapbox.maps.MapView;
 import com.mapbox.maps.Style;
 
-
-public class MainActivity extends AppCompatActivity {
+public class map extends AppCompatActivity {
 
     private MapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+        setContentView(R.layout.map);
         mapView = findViewById(R.id.mapView);
         mapView.getMapboxMap().loadStyleUri(Style.MAPBOX_STREETS);
     }
